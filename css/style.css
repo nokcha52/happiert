@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cafe24ClassicType';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+
+::-webkit-scrollbar {
+    color: #e02c2c;
+    width: 8px;
+}
+header {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.upper {
+    background-color: rgb(195, 14, 14);
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;    
+}
+.upper > a {
+    color: #fff;
+    font-size: 14px;
+    
+}
+.head_box {
+    justify-content: space-between;
+    padding: 28px 60px;
+    line-height: 45px;
+    /* position: relative; */
+}
+.head_box,
+.head_left,
+.head_right {
+    display: flex;
+}
+.head_left > li > a {
+    color: rgb(185, 12, 12);
+    font-family: 'Paperozi';    
+    font-size: 17px;
+    padding: 0 18px;   
+}
+.upper_middle {
+    transform: translateX(-200px);
+    
+}
+.upper_middle > h1 {
+    color: rgb(212, 6, 6);
+    font-family: 'Cafe24ClassicType';
+    font-size: 40px;
+    font-weight: 700;
+}
+.head_right > li > a > i {
+    color: rgb(212, 6, 6);
+    padding: 0 10px;
+}
+.left_bottom_btn {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.left_bottom_btn > div {
+    padding: 22px 16px;
+    background-color: rgb(167, 36, 36);
+    border-radius: 50%;
+    /* margin: 4px 0; */
+}
+.left_bottom_btn > div:first-child {
+    margin-bottom: 8px;
+}
+.left_bottom_btn > div > a {
+    margin: 0;
+    color: #fff;
+    font-family: 'Paperozi';
+    font-size: 14px;
+}
+.left_bottom_btn > div > a > i {
+    transform: translateX(8px);
+}
+.pattern {
+    padding: 0;
+    margin: 0;
+}
+.pattern > div {
+    background-color: rgb(167, 36, 36);    
+    width: 20px;
+    height: 15px;
+    border-end-end-radius: 32px;
+    transform: translateY(-90px);
+    transform: translateX(40px);
+    z-index: -1;
+    margin: 0;
+    position: absolute;
+    /* top: 200px; */
+    /* right: 30px; */
+}
+main {
+    background-color: rgb(244, 239, 234);
+}
+.main1 {
+    background-image: url(../img/main_img/메인배경.png);
+    background: cover;    
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+.main1 > .main1_text {
+    position: absolute;
+    top: 220px;
+    left: 80px;
+}
+.main1 > .main1_text > h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -3px;
+}
+.main1 > .main1_text > p {
+    color: #fff;
+    font-size: 19px;
+    margin-top: 50px;    
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+.main2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    gap: 40px;
+}
+.main2 > div > img {
+    width: 530px;
+}
+.price_box {
+    width: 530px;
+    align-items: center;
+}
+.price_box > p {
+    color: #d32020;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0 16px 0;
+}
+.price_box > span {
+    color: #d32020;
+    font-weight: 700;
+    font-family: 'GMarketSans';
+    margin-right: 10px;
+    
+}
+.price_box >:nth-child(4) {    
+    text-decoration: line-through solid 2px;
+    opacity: 0.5;
+}
+.price_box > div {
+    width: 80px;
+    height: 24px;
+    line-height: 26px;
+    padding: 4px;
+    border: solid 1px #d02626;
+    border-radius: 32px;
+    color: #d02626;
+    margin-top: 16px;
+}
+.price_box > div > p {
+    transform: translateX(10px);
+    font-size: 14px;
+    font-family: 'GMarketSans';
+}
+
+.main3 {
+    width: 100%;    
+    overflow: hidden;
+
+}
+.main3 > p {
+    color: #d02626;
+    font-size: 160px;
+    font-family: 'GMarketSans';
+    width: max-content;
+    animation: roll_text 180s infinite linear;
+    margin: 200px 0;
+}
+ @keyframes roll_text {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+.main3 > div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 30px;
+}
+.main3 > div > img {
+    width: 540px;
+}
+
+.main3 > div > div > div {
+    margin-top: 100px;
+    width: 540px;
+}
+.main3 > div > div > div > h3 {
+    font-size: 54px;
+    color: #c02727;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.main3 > div > div > div > p {
+    font-size: 17px;
+    line-height: 26px;
+    color: #c02727;
+}
+.viewmore > a {
+    display: block;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #a71f1f;
+    border-radius: 40px;
+    padding: 14px;
+    margin: 0;    
+    transform: translateY(80px);
+}
+.viewmore > a > p {
+    transform: translateX(8px);
+    font-weight: 700;
+    color: #a22424;
+}
+.main3_text2 {
+    margin-top: 100px;
+}
