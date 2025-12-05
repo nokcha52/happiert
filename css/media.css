@@ -6,6 +6,13 @@
     .upper_middle > h1 {
         transform: translateX(30px);
     }
+    .upper_middle > h1 {
+        /* transform: translateX(-100px); */
+    }
+    .big_text > p {
+        font-size: 80px;
+        margin-right: 200px ;
+    }
 } 
 @media (max-width:1600px) {
     .head_left > li > a {
@@ -14,15 +21,39 @@
     .upper_middle > h1 {
         transform: translateX(50px);
     }
+    .head_right > li > a > i {
+        font-size: 24px;
+    }
+    .main2 > .price_box,
+    .main2 > .price_box > img {
+        width: 400px;
+    }
+    .big_text > p {
+        font-size: 60px;
+        margin-right: 100px;
+    }
 } 
 @media (max-width:1400px) {
     .head_left > li > a {
         font-size: 12px;
     }
     .upper_middle > h1 {
-        transform: translateX(100px);
+        transform: translateX(50px);
     }
-} 
+    .main2 > .price_box,
+    .main2 > .price_box > img {
+        width: 350px;
+    }
+}
+@media (max-width:1200px) {
+    .main2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .big_text > p {
+        margin-right: 50px;
+    }
+}
 
 @media (max-width:1000px) {
     .head_left > li > a {
@@ -37,5 +68,18 @@
     .upper_middle {
         margin: 0;
         padding: 0;
+    }
+    .main2 > .price_box,
+    .main2 > .price_box > img {
+        /* width: 250px; */
+    }.big_text > p {
+        margin: 0;
+        font-size: 40px;
+    }
+    .price_box > p {
+        font-size: 16px;
+    }
+    .price_box > span {
+        font-size: 12px;
     }
 } 
