@@ -315,27 +315,34 @@ main {
     border-radius: 100px;   
 }
  .windmeal_cirlce {
-    width: 300px;
+    /* width: 100%; */
+    /* box-sizing: content-box;
+    align-items: center; */
     /* animation: rotate 6s linear infinite;     */
 }
  .circle { 
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     background: #a22424;
     border-radius: 50%;
-}
-.circle:nth-child(1) {
-    transform: translate(60px,50px);
-}
-.circle:nth-child(2) {
-    transform: translate(-10px,0);
+    margin: 0;    
 }
 .circle:nth-child(3) {
-    transform: translate(60px,-50px);
+    opacity: 0;
 }
-.circle:nth-child(4) {
-    transform: translate(130px,-240px);
+.circle:nth-child(1) {
+    transform: translate(-180px,360px);
 }
+/* .circle:nth-child(2) {
+    transform: translate(0,45px);
+} */
+/* .circle:nth-child(4) {
+    transform: translate(0,-45px);
+} */
+/* .circle:nth-child(5) {
+    transform: translate(75px,-240px);
+}  */
+
 @keyframes rotate {
     50% {
         transform: rotate(180deg);
