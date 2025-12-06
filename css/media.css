@@ -150,6 +150,12 @@
     }
 }
 @media (max-width:800px) {
+    .main1 > .main1_text > h2 {
+        font-size: 40px;
+    }
+    .main1 > .main1_text > p {
+        font-size: 16px;
+    }
     .big_text > p {
         font-size: 40px;
         line-height: 80px;
@@ -183,7 +189,27 @@
         height: 140px;
     }
 }
+@media (max-width: 600px) {
+    .main3 > div > div > div > h3 {
+        font-size: 30px;
+    }
+    .main3 > div > div > div > p {
+        font-size: 16px;
+    }
+}
 @media (max-width:500px) {
+    .main1 > .main1_text > h2 {
+        font-size: 32px;
+    }
+    .main1 > .main1_text > p {
+        font-size: 12px;
+    }
+    .main3 > div > div > div > h3 {
+        font-size: 28px;
+    }
+    .main3 > div > div > div > p {
+        font-size: 12px;
+    }
     .big_text > p {
         font-size: 30px;
     }
@@ -196,5 +222,17 @@
     .circle {
         width: 100px;
         height: 100px;
+    }
+}
+@media (max-width:400px) {
+    .main1 > .main1_text {
+        left: 20px;
+    }
+    .main1 > .main1_text > h2 {
+        font-size: 24px;
+        line-height: 48px;
+    }
+    .main1 > .main1_text > p {
+        font-size: 12px;
     }
 }

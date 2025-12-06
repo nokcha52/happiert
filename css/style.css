@@ -323,7 +323,7 @@ main {
  .windmeal_cirlce {
     animation: rotate 6s linear infinite;   
     margin: 100px;
-    position: relative; 
+    position: relative;
 }
  .circle { 
     position: absolute;
@@ -331,7 +331,8 @@ main {
     height: 180px;
     background: #a22424;
     border-radius: 50%;
-    margin: 0;    
+    margin: 0;
+    overflow: hidden;    
 }
 .circle:nth-child(1) {
     transform: translate(-90%,-90%)
