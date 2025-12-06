@@ -181,11 +181,11 @@ main {
     margin-top: 120px;
     gap: 40px;
 }
-.main2 > div > img {
+.main2 > div > img,
+.price_box {
     width: 530px;
 }
 .price_box {
-    width: 530px;
     align-items: center;
 }
 .price_box > p {
@@ -246,16 +246,16 @@ main {
 
 .main3 > div {
     display: flex;
-    justify-content: space-evenly;
-    margin: 0 30px;
+    justify-content: center;
+    gap: 20px;
 }
-.main3 > div > img {
+.main3 > div > figure >img,
+.main3 > div > div > div {
     width: 540px;
 }
 
 .main3 > div > div > div {
     margin-top: 100px;
-    width: 540px;
 }
 .main3 > div > div > div > h3 {
     font-size: 54px;
@@ -272,8 +272,11 @@ main {
 .viewmore > a > p {
     transform: translateY(80px);
 }
+.viewmore {
+    display: block;
+}
 .viewmore > button {
-    display: inline-block;
+    /* display: block; */
     border: solid 1px #a71f1f;
     border-radius: 40px;
     width: 160px;
@@ -282,7 +285,7 @@ main {
     font-weight: 700;
     background-color: transparent;
     color: #a22424;
-    transform: translateY(100px);
+    /* transform: translateY(100px); */
     transition: 0.5s;  
 }
 .viewmore > button:hover {    
@@ -295,7 +298,8 @@ main {
 }
 .main4 {
     display: flex;
-    margin: 100px;
+    justify-content: space-around;
+    margin: 100px 0;
 }
 
 .big_text > p {
@@ -310,58 +314,27 @@ main {
     padding: 20px 80px;
     border-radius: 100px;   
 }
-/* .main4 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 100px;
-}
-
-.windmeal_circle {
-  position: relative;
-  width: 260px;   
-  height: 260px;
-  animation: rotate 6s linear infinite;
-}
-
-.circle {
-  position: absolute;
-  width: 140px;
-  height: 140px;
-  background: #a22424;
-  border-radius: 50%;
-}
-
-.circle:nth-child(1) { transform: translate(-50px, 60px); }
-.circle:nth-child(2) { transform: translate(60px, -50px); }
-.circle:nth-child(3) { transform: translate(-50px, -50px); }
-.circle:nth-child(4) { transform: translate(60px, 60px); }
-
-@keyframes rotate {
-    50% { transform: rotate(180deg); }
-    100% { transform: rotate(360deg); }
-} */
  .windmeal_cirlce {
-    position: relative;
-    width: 0px;
-    height: 0px;
+    width: 300px;
     /* animation: rotate 6s linear infinite;     */
 }
- .circle {    
-    position: absolute;
-  width: 140px;
-  height: 140px;
-  background: #a22424;
-  border-radius: 50%;
+ .circle { 
+    width: 120px;
+    height: 120px;
+    background: #a22424;
+    border-radius: 50%;
 }
-.circle:nth-child(1){
-    transform: translate(120px,120px);
+.circle:nth-child(1) {
+    transform: translate(60px,50px);
 }
-.circle:nth-child(3){
-    transform: translate(0,120px);
+.circle:nth-child(2) {
+    transform: translate(-10px,0);
 }
-.circle:nth-child(4){
-    transform: translate(120px,0px);
+.circle:nth-child(3) {
+    transform: translate(60px,-50px);
+}
+.circle:nth-child(4) {
+    transform: translate(130px,-240px);
 }
 @keyframes rotate {
     50% {
@@ -376,6 +349,9 @@ main {
     width: 100%;
     height: 700px;       
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .main5 > div {
     padding-top: 200px ;
@@ -400,16 +376,18 @@ main {
     font-size: 18px;
     font-weight: 800;
     transition: 0.3s;
+    width: 160px;
 }
-.main5 > .viewmore:hover {
+.main5 > a:hover {
     background-color: #fff;
     color: #a22424;
 }
 footer {
     margin: 0;
     padding: 80px;
-    height: 400px;
+    height: 100%;
     background-color: #c11313;
+    /* align-items: center; */
 }
 footer > h2 {
     color: #fff;
@@ -433,7 +411,7 @@ footer > div > div > h3 {
 footer > div > div > h3,
 footer > div > div > p,
 .contact_us > div > p:nth-child(2) {
-    padding-bottom: 28px;
+    padding-bottom: 24px;
 }
 .contact_us > div > p:nth-child(1) {
     padding-bottom: 10px;
@@ -442,7 +420,7 @@ footer > div > div > p,
 footer > div > div > div > a,
 footer > div > div > div > p {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Paperozi_400';
     font-weight: 400;
     line-height: 32px;
@@ -450,6 +428,7 @@ footer > div > div > div > p {
 footer > div > div > div > a {
     display: block;
     padding: 10px 0;
+    width: 200px;
     position: relative;
 }
 footer > div > div > div > a:first-child {
@@ -464,8 +443,8 @@ footer > div > div > div > a::after {
     width: 300px;
     background-color: #fff;
 }
-.contact_us {
-    transform: translateX(100px);
+.guide {
+    margin-right: 100px;
 }
 .plus_freind {
     font-size: 24px;
