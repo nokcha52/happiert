@@ -65,7 +65,7 @@
     }
     .guide {
         margin-right: 0;
-}
+    }
 } 
 @media (max-width:1400px) {
     .head_left > li > a {
@@ -178,9 +178,11 @@
         font-size: 20px;
         line-height: 36px;
     }
+    .circle {
+        width: 140px;
+        height: 140px;
+    }
 }
-
-
 @media (max-width:500px) {
     .big_text > p {
         font-size: 30px;
@@ -191,7 +193,8 @@
     footer > h2 {
         font-size: 50px;
     }
-}
-@media (max-width:500px) {
-    
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
 }

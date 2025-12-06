@@ -305,6 +305,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 200px 0;
 }
 
 .big_text > p {
@@ -320,29 +321,26 @@ main {
     border-radius: 100px;   
 }
  .windmeal_cirlce {
-    animation: rotate 6s linear infinite;    
+    animation: rotate 6s linear infinite;   
+    margin: 100px;
+    position: relative; 
 }
  .circle { 
+    position: absolute;
     width: 180px;
     height: 180px;
     background: #a22424;
     border-radius: 50%;
     margin: 0;    
 }
-.circle:nth-child(3) {
-    opacity: 0;
-}
 .circle:nth-child(1) {
-    transform: translate(-105px,360px);
+    transform: translate(-90%,-90%)
 }
 .circle:nth-child(2) {
-    transform: translate(0,75px);
+    transform: translate(0,-90%)
 }
-.circle:nth-child(4) {
-    transform: translate(0,-75px);
-}
-.circle:nth-child(5) {
-    transform: translate(105px, -360px);
+.circle:nth-child(3) {
+    transform: translate(-90%,0)
 }
 
 @keyframes rotate {
